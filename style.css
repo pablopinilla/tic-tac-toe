@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gameboard-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gameboard {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 133.33px;
+    height: 133.33px;
+}
+
+.left,
+.right,
+.center {
+    border-bottom: solid;
+}
+
+.center {
+    border-right: solid;
+    border-left: solid;
+}
+
+.left.last,
+.right.last,
+.center.last {
+    border-bottom: none;
+}
